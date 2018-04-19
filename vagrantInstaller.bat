@@ -11,5 +11,5 @@ mkdir "%drive%:\vagrant\"
 cd /d "%drive%:\vagrant\"
 set /p password="Enter ftp password : "
 
-curl ftp://ftp.mpenv.com/setup/VagrantFileMongo --user sre:%password% -o %drive%:\vagrant\Vagrantfile
+curl ftp://ftp.mpenv.com/setup/vagrant/phusion/Vagrantfile --user sre:%password% -o %drive%:\vagrant\Vagrantfile
 vagrant up
